@@ -1,0 +1,14 @@
+.item-wrap{
+    position: relative;
+    padding: 15px;
+    background: #cc49abc2;
+    border:1px solid #d182cd;
+}
+.s{
+    position: relative;
+    left: 80px;
+}
+.a{
+    position: relative;
+    left: 115px; 
+}

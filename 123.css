@@ -1,0 +1,47 @@
+
+input[id*="number"] {
+    display:none;
+}
+
+input[id*="number"] + label { 
+  display:block;
+  padding: 20px;
+  border:1px solid #1c1a88;
+  border-bottom: 0;
+  color:#fff;
+ font-weight: 900;
+ background: #3634a5;
+ cursor:pointer;
+ position: relative;
+}
+
+input[id*="number"] + label em {
+    position: absolute;
+top: 50%;
+right: 10px;
+width: 30px;
+height: 30px;
+margin-top: -15px;
+display: inline-block;
+background:url('.D:/asdf/img/allow.jpg') 0 0 no-repeat;
+}
+
+input[id*="number"] + label + div {
+     max-height: 0;
+     transition: all .35s;
+     overflow: hidden;
+    
+     background: paleturquoise;
+     font-size:25px;
+}
+
+input[id*="number"] + label + div p {
+    display: inline-block;
+    padding:25px;
+}
+
+input[id*="number"]:checked + label + div {max-height:1500px ;}
+
+input[id*="number"]:checked + label em {background-position: 0 -30px;}
+
+
